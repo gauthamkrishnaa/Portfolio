@@ -1,0 +1,60 @@
+/* Set full height for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Flexbox to manage the layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Main container for the app */
+.main-container {
+    flex: 1; /* Allow this container to grow and fill the body */
+    display: flex;
+    flex-direction: column; /* Stack navbar, hero, and content vertically */
+}
+
+/* Navigation bar styles */
+nav {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Header styles with background image */
+header {
+    background: url('./hero.jpg.avif') no-repeat center center/cover; /* Update if needed */
+    height: 60vh; /* Takes 60% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Section styles for projects */
+section {
+    flex: 1; /* Allows section to grow and fill the remaining space */
+    padding: 2rem;
+    overflow: auto; /* Allows internal scrolling if content overflows */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Full width for the footer */
+    position: relative; /* Makes sure it flows naturally below the content */
+}
